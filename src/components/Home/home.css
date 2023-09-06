@@ -1,0 +1,329 @@
+
+.carosoll{
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.carosoll h1{
+    font-family: Comfortaa;
+    text-transform: capitalize;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    mix-blend-mode:difference;
+}
+.hero--img{
+    width: 100%;
+}
+
+.search{
+    bottom: 25%;
+    position:absolute;
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    width:65vw;
+    height: 4vh;
+    margin-left:50%;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: rgba(225, 225, 225, .7);
+}
+
+.search--btn{
+    position:absolute;
+    left: 96%;
+}
+
+
+
+/* Photo Grid */
+#photos {
+    margin: 20px 10%;
+    /* Prevent vertical gaps */
+    line-height: 0;
+    
+    -webkit-column-count: 3;
+    -webkit-column-gap:   20px;
+    -moz-column-count:    3;
+    -moz-column-gap:      20px;
+    column-count:         3;
+    column-gap:           20px;
+ }
+ 
+ #photos img {
+   width: 100%;
+   height: auto;
+   margin: 10px;
+ }
+ 
+@media screen and (max-width : 980px) {
+    #photos {
+        -moz-column-count:    2;
+        -webkit-column-count: 2;
+        column-count:         2;
+        -webkit-column-gap:   10px;
+        -moz-column-gap:      10px;
+        column-gap:           10px;
+    }
+}
+@media (max-width : 800px) {
+    #photos {
+        -moz-column-count:    1;
+        -webkit-column-count: 1;
+        column-count:         1;
+    }
+    .carosoll{
+        height: 40%;
+    }
+}
+
+.user--img{
+    max-width: 40px;
+    border-radius:1000px;
+}
+
+.img--card{
+    position: relative;
+}
+.user{
+    display: none;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    color: white;
+}
+.image:hover{
+    cursor: pointer;
+    filter: brightness(.5);
+}
+.user--username{
+    font-size: 12px;
+    color: rgb(161, 156, 156) !important;
+}
+/* .img--desc{
+    display: none !important;
+    position: absolute;
+    font-size: 18px;
+    top: 25px;
+    left:10%;
+    color: white !important;
+} */
+.hover--btn{
+    position: absolute;
+    bottom: 32px;
+    left: 90%; 
+}
+.download{  
+    border: 1px solid grey;
+    height: 35px;
+    width: 35px;
+    border-radius: 4px;
+    color: grey;
+    font-weight: 500;
+}
+.download:hover{
+    border: 1px solid black;
+    color: #000;
+    cursor: pointer;
+}
+.image:hover + .user{
+    display: flex;
+}
+.user:hover{
+    display: flex;
+}
+
+.popup--hidden{
+    position: absolute;
+    display:none !important;
+}
+
+.popup--card{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    overflow: scroll;
+    padding: 1.5% 10%;
+    z-index: 10;
+}
+
+
+.popup--container{
+    width: 80vw;
+    /* height: 94vh; */
+    padding: 5px;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.popup--small--container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    overflow: scroll;
+    padding: 1.5% 10%;
+    z-index: 100;
+}
+
+.popup--small{
+    width: 30vw!important;
+    padding: 5px;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+.popup--albumlist{
+    list-style-type: none;
+    text-transform: capitalize;
+    margin: 2rem;
+    border: 1px solid #ddd;
+    font-weight: 600;
+}
+
+.popup--albumlist  li{
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #000;
+    line-height: normal;
+}
+
+.popup--albumlist li:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.landscape{
+    
+    width: 60vw !important;
+}
+.portrait{
+    max-height: 75vh!important;
+    width: auto!important;
+}
+
+.popup--header{
+    display: flex;
+    width: 100%;
+}
+
+.popup--user{
+    display:flex;
+    color:grey;
+}
+.popup--user:hover{
+    color: #000;
+}
+
+.popup--close{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 35px;
+    width: 35px;
+    top: 2%;
+    right: 2%; 
+    color: grey;
+    font-weight: 500;
+}
+.popup--close:hover{
+    color:#000;
+}
+
+.popup--footer{
+    display: flex;
+    padding: 10px 20px;
+    width: 100%;
+    position: relative;
+}
+.likes{
+    margin-right:20px;
+}
+
+
+.popup--download{  
+    border: 1px solid grey;
+    height: 35px;
+    width: 75px;
+    border-radius: 4px;
+    color: grey;
+    font-weight: 500;
+    right: 1%;
+}
+.popup--download:hover{
+    border: 1px solid black;
+    color: #000;
+}
+.mobile{
+    display:none;
+    background-color: white;
+}
+.mobile--btns{
+    margin-left: auto;
+}
+.mobile--download{  
+    border: 1px solid grey;
+    height: 35px;
+    width: 35px;
+    border-radius: 4px;
+    color: grey;
+    font-weight: 500;
+}
+.mobile--download:hover{
+    border: 1px solid black;
+    color: #000;
+    cursor: pointer;
+}
+@media (max-width:600px) {
+    .hover--btn{
+        display: none;
+    }
+    .popup--card{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    #photos img {
+        margin: 0px;
+    }
+    .user--img{
+        margin: 6px!important;
+        width: 40px!important;
+        height: 40px!important;
+    }
+}
+
+.popup--control{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: grey;
+    font-size: 30px;
+    cursor: pointer;
+}

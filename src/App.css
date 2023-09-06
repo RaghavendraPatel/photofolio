@@ -28,11 +28,101 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar{
+  width: 0;
+}
+
+.form--container{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+.user-form{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #21222A;
+  width: 50%;
+  padding: 2rem;
+}
+
+.user-form h1{
+  color: white;
+}
+
+.form--inp input{
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.form--inp input:focus{
+  outline: none;
+}
+
+.form--inp button{
+  margin-top: 2rem;
+  height: 40px;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.close-form{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.Form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #21222A;
+  width: 100%;
+  padding: 2rem;
+}
+.Form h3{
+  color: white;
+  text-transform: capitalize;
+}
+.Form div{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.Form div input{
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 18px;
+}
+.Form button{
+  margin-top: 2rem;
+  height: 40px;
+  font-size: 1.2rem;
+  width: 100%;
 }

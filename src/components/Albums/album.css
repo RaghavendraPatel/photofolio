@@ -1,0 +1,101 @@
+.album--container{
+    width: 80vw;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: 0 auto;
+    text-transform: capitalize;
+    color: white;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+.back:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+/* Album Card */
+.AlbumCard{
+    position:relative;
+    padding:.5rem;
+    background-color: rgb(233, 229, 229);
+    border: 2px solid rgb(185, 185, 185);
+    color: black;
+    box-sizing: border-box;
+    width: 10vw;
+    min-width:125px;
+    border-radius: 5px;
+    transition: all 0.4s;
+    text-transform: capitalize;
+}
+
+.AlbumCard img{
+    width: 100%;
+    min-width:100px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.AlbumCard:hover img{
+    transform: scale(1.03);
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.AlbumCard:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 40px 5px rgba(53, 53, 53, 0.9);
+}
+
+.card--container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem;
+}
+
+.album--btns{
+    display: none;
+}
+
+.card--container:hover .album--btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+
+.album--edit{
+    color: white;
+    background-color: green;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: .2rem .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.album--delete{
+    color: white;
+    background-color: red;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: .2rem .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* Album Form */
+
